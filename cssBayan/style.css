@@ -79,10 +79,6 @@ li {
     font-size: 2.5rem;
     }
 }
-/* .bayan_icon {
- display: block;
- padding-right: 0;
-}  */
 
 .bayan_img {
  height: 0;
@@ -95,47 +91,37 @@ li {
 height: 40vw;
 opacity: 1;
 }
-
+@media (hover: hover) {
 .bayan_input:hover ~ label .bayan_img {
 height: 40vw;
 opacity: 1;
+}
 }
 
 .bayan_input:checked ~ label .bayan_cross {
   transform: rotate(45deg);
 }
 
+@media (hover: hover){
+.bayan_input:hover ~ label .bayan_cross {
+    transform: rotate(45deg);
+    transition: 1s;
+}
+}
+
 .bayan_cross {
- height: 4vw;
+ height: 5vw;
 }
 
-/*
-.bayan_input:checked ~ .bayan_label {
-  color: #006bb3;
+@media (hover: hover) {
+.bayan_cross {
+  opacity: 0;
+}
 }
 
-.bayan_content {
-  display: none;
-  overflow: hidden;
-  text-align: center; 
-  padding-top: 2%;
+@media (hover: hover) {
+.main:hover .bayan_cross {
+    opacity: 1;
+}
 }
 
-.bayan_input:checked ~ .bayan_content {
-  position: static;
-  overflow: visible;
-  display:block;
-  animation:fadeIn ease-in 0.5s; 
-}
-
-.bayan_input:hover ~ .bayan_content {
-  position: static;
-  overflow: visible;
-  display:block;
-  animation:fadeIn ease-in 0.5s; 
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-to { opacity: 1 }
-} */
