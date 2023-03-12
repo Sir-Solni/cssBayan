@@ -7,7 +7,7 @@
 
   body {
     font-size: 1rem;
-  }
+ }
   @media (min-width: 750px) {
     body {
         font-size: 1.5rem; 
@@ -68,6 +68,7 @@ li {
  display: flex;
  font-size: 0.8rem;
  justify-content: space-between;
+ color: rgb(50, 50, 220);
 } 
 @media (min-width: 750px){
 .bayan_text {
@@ -87,10 +88,15 @@ li {
  margin-bottom: 2%;
  transition: 1s;
 } 
+
 .bayan_input:checked ~ label .bayan_img {
 height: 40vw;
 opacity: 1;
 }
+.bayan_input:checked ~ label .bayan_text {
+color: black;
+}
+
 @media (hover: hover) {
 .bayan_input:hover ~ label .bayan_img {
 height: 40vw;
@@ -98,9 +104,12 @@ opacity: 1;
 }
 }
 
+
 .bayan_input:checked ~ label .bayan_cross {
   transform: rotate(45deg);
+  transition: 1s;
 }
+
 
 @media (hover: hover){
 .bayan_input:hover ~ label .bayan_cross {
@@ -125,3 +134,8 @@ opacity: 1;
 }
 }
 
+@media (hover: hover) {
+.main:hover .bayan_text {
+    color: black;
+}
+}
